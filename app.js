@@ -7,7 +7,9 @@ window.Webflow.push(() => {
       slidesPerView: "1",
       speed: 700,
       keyboard: true,
-      mousewheel: true,
+      mousewheel: {
+        forceToAxis: true,
+      },
     });
   });
 });
