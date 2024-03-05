@@ -2,6 +2,7 @@
 
 window.Webflow ||= [];
 window.Webflow.push(() => {
-  alert("hello perch house");
-  console.log("uploade file");
+  $(".slider-main_component").each(function (index) {
+    const swiper = new Swiper($(this).find(".swiper")[0], {});
+  });
 });
